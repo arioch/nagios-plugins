@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Nagios-plugins by arioch</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Nagios-plugins</h1>
+        <p>A bunch of plugins for both Nagios and Icinga we are evaluating.</p>
+
+        <p class="view"><a href="https://github.com/arioch/nagios-plugins">View the Project on GitHub <small>arioch/nagios-plugins</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/arioch/nagios-plugins/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/arioch/nagios-plugins/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/arioch/nagios-plugins">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>Nagios-plugins</h3>
+
+<p>This is a selection of plugins for both Nagios and Icinga.
+Packages for RHEL/CentOS and Debian/Ubuntu will be built in a CI fashion in the near future.</p>
+
+<p>A script to build the packages yourself has been included.</p>
+
+<h3>Requirements</h3>
+
+<ul>
+<li><a href="https://github.com/jordansissel/fpm">FPM</a></li>
+<li>Ruby (for FPM)</li>
+<li>rpmbuild </li>
+</ul><h3>Usage</h3>
+
+<p>RHEL/CentOS:</p>
+
+<pre><code>yum install rpm-build
+gem install fpm --no-rdoc --no-ri
+cd build
+make
+</code></pre>
+
+<p>Debian:</p>
+
+<pre><code>apt-get install rpm
+gem install fpm --no-rdoc --no-ri
+cd build
+make
+</code></pre>
+
+<h3>Optional</h3>
+
+<ul>
+<li>Vagrant</li>
+</ul><p>An example Vagrant project has been included to get you started right away.</p>
+
+<pre><code>cd vagrant
+vagrant up
+vagrant ssh
+cd build
+make
+</code></pre>
+
+<h3>Available plugins</h3>
+
+<table>
+<tr>
+<th>Plugin</th>
+<th>Author(s)</th>
+<th>Source</th>
+    </tr>
+<tr>
+<td>check_bacula</td>
+        <td><a href="http://www.xing.com/profile/Julian_Hein">Julian Hein</a></td>
+        <td><a href="http://exchange.nagios.org/directory/Plugins/Backup-and-Recovery/Bacula/check_bacula-2Epl/details/">upstream</a></td>
+    </tr>
+<tr>
+<td>check_mem.pl</td>
+        <td><a href="http://garretthoneycutt.com/">Garrett Honeycutt</a></td>
+        <td><a href="http://exchange.nagios.org/directory/Plugins/Uncategorized/Operating-Systems/Linux/check_mem/details">upstream</a></td>
+    </tr>
+<tr>
+<td>check_mysqld.pl</td>
+        <td><a href="http://william.leibzon.org">William Leibzon</a></td>
+        <td><a href="http://william.leibzon.org/nagios/">upstream</a></td>
+    </tr>
+<tr>
+<td>check_linux-procstat.pl</td>
+        <td><a href="http://william.leibzon.org">William Leibzon</a></td>
+        <td><a href="http://william.leibzon.org/nagios/">upstream</a></td>
+    </tr>
+<tr>
+<td>check_apache-auto.pl</td>
+        <td>Robert Becht</td>
+        <td><a href="http://exchange.nagios.org/directory/Plugins/Web-Servers/Apache/Robert-Becht/details">upstream</a></td>
+    </tr>
+<tr>
+<td>check_puppet.rb</td>
+        <td>
+<a href="http://www.devco.net/">R.I. Pienaar</a>
+        </td>
+<td><a href="https://github.com/ripienaar/monitoring-scripts/blob/master/puppet/check_puppet.rb">upstream</a></td>
+    </tr>
+<tr>
+<td>check_linux-stats.pl</td>
+        <td>Damien Siaud</td>
+        <td><a href="http://exchange.nagios.org/directory/Plugins/Operating-Systems/Linux/check_linux_stats/details">upstream</a></td>
+    </tr>
+</table><h3>Contributions</h3>
+
+<p>As usual contributions are highly encouraged.
+If you'd like to do so, please do not hesitate to send pull requests.</p>
+
+<p>Guidelines:</p>
+
+<ul>
+<li>Fork this repository</li>
+<li>Add plugin script to the repository</li>
+<li>Add plugin details to build.txt</li>
+<li>Update author table in README.md</li>
+<li>Send a pull request</li>
+<li>...</li>
+<li>Profit!</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/arioch">arioch</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
