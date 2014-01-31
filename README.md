@@ -225,6 +225,11 @@ This requires cucumber to be installed on your workstation.
         <td><a href="http://github.com/sperris"></a>J.P. Dowd</td>
         <td><a href="https://github.com/sperris/check_solr_rows">upstream</a></td>
     </tr>
+    <tr>
+        <td>check_drupal</td>
+        <td><a href="http://2bits.com">Khalid Baheyeldin</a></td>
+        <td><a href="https://drupal.org/project/nagios">upstream</a></td>
+    </tr>
 </table>
 
 ### Contributions
